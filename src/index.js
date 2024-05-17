@@ -8,13 +8,22 @@ import "bootstrap/dist/js/bootstrap.bundle.js";
 import "./style.css";
 import Myerrorpage from './modules/shares/Myerrorpage';
 
+import Myhomepage from './modules/dashboard/Myhomepage';
+import Myreactbootstrappage from './modules/dashboard/Myreactbootstrappage';
+import Mynav from './modules/shares/Mynav';
+import Myuimetrial from './modules/dashboard/Myuimetrial';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
       <BrowserRouter>
+      <Mynav/>
            <Routes>
              <Route path='/' element={<Loginpage/>}/>
-             <Route path='/register' element={<Registerpage/>} />
+             <Route path='register' element={<Registerpage/>} />
+             <Route path='landing' element={<Myhomepage/>} />
+             <Route path='reactbootstrap' element={<Myreactbootstrappage/>} />
+             <Route path='myuimetrial' element={<Myuimetrial/>}/>
              <Route path='*' element={<Myerrorpage/>} />
            </Routes>
       </BrowserRouter>
