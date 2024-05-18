@@ -12,6 +12,7 @@ import Myhomepage from './modules/dashboard/Myhomepage';
 import Myreactbootstrappage from './modules/dashboard/Myreactbootstrappage';
 import Mynav from './modules/shares/Mynav';
 import Myuimetrial from './modules/dashboard/Myuimetrial';
+import Parentelement from './modules/dashboard/Parentelement';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -24,6 +25,7 @@ root.render(
              <Route path='landing' element={<Myhomepage/>} />
              <Route path='reactbootstrap' element={<Myreactbootstrappage/>} />
              <Route path='myuimetrial' element={<Myuimetrial/>}/>
+             <Route path='props' element={<Parentelement/>}/>
              <Route path='*' element={<Myerrorpage/>} />
            </Routes>
       </BrowserRouter>
