@@ -14,6 +14,7 @@ import Mynav from './modules/shares/Mynav';
 import Myuimetrial from './modules/dashboard/Myuimetrial';
 import Parentelement from './modules/dashboard/Parentelement';
 import Databinding from './modules/dashboard/Databinding';
+import Apiaxios from './modules/dashboard/Apiaxios';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -28,6 +29,7 @@ root.render(
              <Route path='myuimetrial' element={<Myuimetrial/>}/>
              <Route path='props' element={<Parentelement/>}/>
              <Route path='binding' element={<Databinding/>}/>
+             <Route path='myaxios' element={<Apiaxios/>}/>
              <Route path='*' element={<Myerrorpage/>} />
            </Routes>
       </BrowserRouter>

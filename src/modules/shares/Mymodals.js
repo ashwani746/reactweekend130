@@ -7,10 +7,10 @@ export const RegistorModal =()=> {
         console.log(data);
     }
 
-    const { register, handleSubmit,watch, formState:{errors}  } = useForm();
+    const { register, handleSubmit, formState:{errors}  } = useForm();
 
     return (
-        <div className="modal fade" id="registor" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div className="modal fade" id="registor" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div className="modal-dialog" role="document">
                 <div className="modal-content">
                 <div className="modal-header">
