@@ -9,12 +9,22 @@ const Apiaxios = () => {
     axios.get("https://jsonplaceholder.typicode.com/todos").then((res) => {
       console.log(res.data);
       sf(res.data)
-    });
-  };
+    })
+}
+    const mygetapi1 = () => {
+        axios.get("https://www.nseindia.com/api/option-chain-indices?symbol=NIFTY").then((res) => {
+          console.log(res);
+                  
+        })
+  }
+
   return (
     <>
       <div>Apiaxios</div>
       <button className="btn btn-primary" type="button" onClick={mygetapi}>
+        Axios Api
+      </button>
+      <button className="btn btn-primary" type="button" onClick={mygetapi1}>
         Axios Api
       </button>
       <div className="container">

@@ -7,7 +7,7 @@ const Mynav = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-info">
     <div className="container-fluid">
-      <a className="navbar-brand" href="#">Navbar</a>
+      <a className="navbar-brand" to="#">Navbar</a>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
@@ -31,19 +31,24 @@ const Mynav = () => {
           <li className="nav-item">
             <Link className="nav-link" to="myaxios">Axios</Link>
           </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="charts">My charts</Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="service">Services</Link>
+          </li>
           <li className="nav-item dropdown">
-            <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
+            <Link className="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               Dropdown
+            </Link>
             <ul className="dropdown-menu">
-              <li><a className="dropdown-item" href="#">Action</a></li>
-              <li><a className="dropdown-item" href="#">Another action</a></li>
-              <li><hr className="dropdown-divider"/></li>
-              <li><a className="dropdown-item" href="#">Something else here</a></li>
+              <li><Link className="dropdown-item" to="#">Car</Link></li>
+              <li><Link className="dropdown-item" to="#">Bike</Link></li>
+              <li><Link className="dropdown-item" to="#">Webpage</Link></li>
             </ul>
           </li>
           <li className="nav-item">
-            <a className="nav-link disabled" aria-disabled="true">Disabled</a>
+            <Link className="nav-link disabled" aria-disabled="true">Disabled</Link>
           </li>
         </ul>
         <form className="d-flex" role="search">

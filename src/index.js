@@ -15,6 +15,8 @@ import Myuimetrial from './modules/dashboard/Myuimetrial';
 import Parentelement from './modules/dashboard/Parentelement';
 import Databinding from './modules/dashboard/Databinding';
 import Apiaxios from './modules/dashboard/Apiaxios';
+import Mycharts from './modules/dashboard/Mycharts';
+import Servicelandingpage from './modules/services/Servicelandingpage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -30,6 +32,8 @@ root.render(
              <Route path='props' element={<Parentelement/>}/>
              <Route path='binding' element={<Databinding/>}/>
              <Route path='myaxios' element={<Apiaxios/>}/>
+             <Route path='charts' element={<Mycharts/>}/>
+             <Route path='service' element={<Servicelandingpage/>}/>
              <Route path='*' element={<Myerrorpage/>} />
            </Routes>
       </BrowserRouter>
